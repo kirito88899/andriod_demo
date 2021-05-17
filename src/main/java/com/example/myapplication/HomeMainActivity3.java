@@ -56,6 +56,5 @@ public class HomeMainActivity3 extends AppCompatActivity {
         apps.add(HomeList4);
         apps.add(HomeList5);
         apps.add(HomeList6);
-
         }
     }

@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
@@ -21,6 +22,14 @@ public class HomeAdater extends RecyclerView.Adapter <HomeAdater.HomeViewHolder>
         this.apps=apps;
         //刷新数据
         notifyDataSetChanged();
+    }
+
+    public HomeAdater(FragmentActivity activity,List<HomeList> homeLists) {
+        this.apps = homeLists;
+    }
+
+    public HomeAdater() {
+
     }
 
     //获取布局文件并转换为View文件

@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class Mydapter extends RecyclerView.Adapter<Mydapter.MyViewHolder> {
@@ -20,6 +21,15 @@ public class Mydapter extends RecyclerView.Adapter<Mydapter.MyViewHolder> {
         this.apps=apps;
         //刷新数据
         notifyDataSetChanged();
+    }
+
+    public Mydapter(FragmentActivity activity, List<AppEntity> appEntityList) {
+        this.apps=appEntityList;
+
+    }
+
+    public Mydapter() {
+
     }
 
     //获取显示的布局
