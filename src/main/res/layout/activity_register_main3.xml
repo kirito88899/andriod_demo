@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_weight="3"
+    tools:context=".RegisterMainActivity3">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/liuxing"
+
+        app:layout_constraintStart_toStartOf="parent" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        style="@style/QqDemo_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/returnbutton"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号名:"
+            style="@style/text_style"
+            />
+
+        <EditText
+
+            android:id="@+id/username"
+            style="@style/edit_style"
+            android:background="@drawable/edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入注册账号"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_style"
+            android:text="密码:"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:inputType="textPassword"
+            style="@style/edit_style"
+            android:background="@drawable/edit_style"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入密码"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        >
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_style"
+
+            android:text="确认密码:"
+            android:textColor="@color/white"/>
+
+        <EditText
+            style="@style/edit_style"
+            android:background="@drawable/edit_style"
+            android:id="@+id/passwordone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="输入密码"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            style="@style/text_style"
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱:"
+            android:textColor="@color/white"/>
+
+        <EditText
+            style="@style/edit_style"
+            android:background="@drawable/edit_style"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="输入邮箱"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="注册"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

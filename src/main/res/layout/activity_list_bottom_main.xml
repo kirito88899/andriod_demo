@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListBottomMainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/pager_view"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#FFFFF0"
+        android:orientation="horizontal"
+        android:id="@+id/rg"
+        >
+        <RadioButton
+            android:id="@+id/shouye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="首页"
+            android:padding="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@drawable/shouye"
+            />
+        <RadioButton
+            android:id="@+id/liebiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="列表"
+            android:padding="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/shouye"/>
+        <RadioButton
+            android:id="@+id/wode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="我的"
+            android:padding="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/shouye"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelatiLelayoutMainActivity2">
+
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆页"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <TextView
+        android:id="@+id/login_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:layout_below="@+id/login"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:layout_toRightOf="@+id/login_name"
+        android:layout_alignBottom="@+id/login_name"
+        android:hint="请输入账号"
+        android:textSize="20dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码"
+        android:textSize="30dp"
+        android:layout_below="@+id/login_name"
+        android:layout_alignLeft="@+id/login_name"
+        android:id="@+id/login_pwd"
+        />
+    <EditText
+        android:id="@+id/login_pwdinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/login_pwd"
+        android:layout_alignBottom="@+id/login_pwd"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:textSize="20dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/login_pwdinput"
+    android:layout_alignLeft="@id/login_pwd"
+    android:layout_margin="30dp"
+    android:id="@+id/asd"
+    >
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_pwd"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:id="@+id/login_butto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="登陆"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="注册"
+            android:textSize="30dp" />
+    </LinearLayout>
+</RelativeLayout>
